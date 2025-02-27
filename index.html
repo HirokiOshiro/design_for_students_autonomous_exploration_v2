@@ -533,6 +533,32 @@
         .section {
             animation: fadeIn 0.5s ease-out;
         }
+    
+        /* 詳細情報エリア内のリストのインデント調整 */
+        .detail-content ol, 
+        .detail-content ul {
+            padding-left: 2em;
+        }
+        
+        /* 詳細情報エリア内のリストのインデント調整 */
+        .detail-content ol, 
+        .detail-content ul {
+            padding-left: 2em;
+        }
+
+        /* 主なポイントの後に水平線を追加 - 各詳細エリアの最初のolに適用 */
+        .detail-content > ol:first-of-type {
+            margin-bottom: 1.5em;
+            padding-bottom: 1.5em;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        /* 特に注意すべき点の後に水平線を追加 - 各詳細エリアの2番目のolに適用 */
+        .detail-content > ol:nth-of-type(2) {
+            margin-bottom: 1.5em;
+            padding-bottom: 1.5em;
+            border-bottom: 1px solid var(--border-color);
+        }
     </style>
 </head>
 <body>
